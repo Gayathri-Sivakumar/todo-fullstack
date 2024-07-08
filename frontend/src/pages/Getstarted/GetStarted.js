@@ -2,7 +2,7 @@ import React from "react";
 import "./GetStarted.css";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import Getstarted from "../../assets/cover3.png";
+import Getstarted from "../../assets/todolist.jpg";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -11,10 +11,21 @@ const LandingPage = () => {
       <div className="GetStarted">
         <div className="l">
           <div className="firstline">
-            "Empowering students, enriching futures."
+            "Stay organized, stay productive."
             <div className="para">
               <div className="first">
-                <p>ABC College Student Management System </p>
+                <p>Welcome to Your To-Do List App</p>
+                <p>
+                  Simplify your life and boost your productivity with our
+                  easy-to-use To-Do List application. Whether you're managing
+                  daily tasks, planning projects, or setting personal goals, our
+                  app is designed to help you stay on top of everything.
+                </p>
+                <p>
+                  Get started now and experience the benefits of a
+                  well-organized and productive lifestyle. Manage your tasks,
+                  set reminders, and achieve your goals effortlessly.
+                </p>
               </div>
             </div>
             <Button
@@ -36,9 +47,7 @@ const LandingPage = () => {
         </div>
         <div className="r">
           <div className="get">
-            <div>
-              <img src={Getstarted} alt="logo" height={700} />
-            </div>
+            <img src={Getstarted} alt="To-Do List" />
           </div>
         </div>
       </div>

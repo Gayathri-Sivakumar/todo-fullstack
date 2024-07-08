@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a8c3ec;
+    background: linear-gradient(135deg, #ffe1bc, #ffcfd1, #f3c6f1);
 }
 
 .login-grid {
@@ -18,21 +18,66 @@
 
 .login-image {
     flex: 1;
-    /* Take up remaining space */
-    background-image: url(../assets/login2.png);
+    background-image: url(../../assets/logipage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffe1bc, #ffcfd1, #f3c6f1);
+}
+
 .login-paper {
-    flex: 1;
-    /* Take up remaining space */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.login-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-form .MuiTextField-root {
+    margin-bottom: 20px;
+}
+
+.login-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ff5a47;
+}
+
+.MuiTypography-h5 {
+    font-weight: 700;
+    color: #061030;
+    margin-bottom: 20px;
+}
+
+.MuiAlert-root {
+    margin-bottom: 20px;
 }
 
 .login-content {

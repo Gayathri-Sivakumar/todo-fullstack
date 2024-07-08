@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import AuthContext from "../context/AuthContext";
+import AuthContext from "../../context/AuthContext";
 
 const Login = () => {
   const { login } = useContext(AuthContext);
@@ -116,7 +116,6 @@ const Login = () => {
                 type="submit"
                 fullWidth
                 variant="contained"
-                color="primary"
                 className="login-button"
               >
                 Log In

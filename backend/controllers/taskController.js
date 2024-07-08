@@ -2,12 +2,12 @@ const Task = require("../models/Task");
 
 async function createTask(req, res) {
   try {
-    const { title, description, dueDate, completed } = req.body;
+    const { title, description, due_date, completed } = req.body;
 
     // Determine status based on completed flag
     const status = completed ? "completed" : "pending";
 
-    const formattedDueDate = new Date(dueDate).toISOString().split("T")[0];
+    const formattedDueDate = new Date(due_date).toISOString().split("T")[0];
     const newTask = await Task.create({
       title,
       description,

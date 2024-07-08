@@ -1,0 +1,52 @@
+.task-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form h2 {
+    color: #333;
+}
+
+.task-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task-form .mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.task-form .mb-4 {
+    margin-bottom: 2rem;
+}
+
+.task-form .form-control {
+    border-radius: 5px;
+}
+
+.task-form .form-check-label {
+    color: #555;
+}
+
+.task-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.task-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.task-form .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.task-form .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
