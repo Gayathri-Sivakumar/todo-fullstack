@@ -1,0 +1,598 @@
+2024-07-07 23:10:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:10:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:10:48 info: Database connected successfully.
+2024-07-07 23:10:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:10:48 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:10:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:10:48 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:11:19 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:11:19 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:11:19 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:13:15 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:13:15 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:13:15 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:22:05 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:22:05 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:22:05 info: Database connected successfully.
+2024-07-07 23:22:05 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:22:05 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:22:05 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:22:05 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:23:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:23:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:23:48 info: Database connected successfully.
+2024-07-07 23:23:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:23:48 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:23:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:23:48 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:26:06 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:26:06 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:26:06 info: Database connected successfully.
+2024-07-07 23:26:06 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:26:06 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:26:06 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:26:06 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:28:04 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:28:04 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:28:04 info: Database connected successfully.
+2024-07-07 23:28:04 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:28:04 info: Executing (default): CREATE TABLE IF NOT EXISTS `Staffs` (`id` INTEGER auto_increment , `email` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2024-07-07 23:28:04 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:28:04 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:28:04 info: Executing (default): CREATE TABLE IF NOT EXISTS `Students` (`id` INTEGER NOT NULL auto_increment , `enrollment_number` VARCHAR(255) NOT NULL, `student_first_name` VARCHAR(255) NOT NULL, `student_last_Name` VARCHAR(255) NOT NULL, `phone_number` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `StaffId` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`StaffId`) REFERENCES `Staffs` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2024-07-07 23:28:04 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:29:19 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:29:19 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:29:19 info: Database connected successfully.
+2024-07-07 23:29:19 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:29:19 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:29:19 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:29:19 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:29:22 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-07 23:29:24 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-07 23:33:49 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:33:49 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:34:25 info: Executing (default): INSERT INTO `Staffs` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-07 23:34:40 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:34:40 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:34:40 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:34:48 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-07 23:34:48 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:34:48 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:34:52 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-07 23:34:52 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-07 23:35:01 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-07 23:35:01 info: Executing (default): UPDATE `Students` SET `phone_number`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-07 23:35:01 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:35:01 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:36:32 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-07 23:36:32 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-07 23:36:37 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:36:37 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:38:18 info: Executing (default): INSERT INTO `Staffs` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-07 23:38:29 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:38:29 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:38:29 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:38:40 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'sivathri30@gmail.com' LIMIT 1;
+2024-07-07 23:38:40 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:38:40 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student`;
+2024-07-07 23:40:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:40:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-07 23:40:48 info: Database connected successfully.
+2024-07-07 23:40:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:40:48 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-07 23:40:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-07 23:40:48 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-07 23:41:10 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'sivathri30@gmail.com' LIMIT 1;
+2024-07-07 23:41:10 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:10 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:30 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-07 23:41:30 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:30 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:35 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '4';
+2024-07-07 23:41:35 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '4';
+2024-07-07 23:41:37 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:37 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '4';
+2024-07-07 23:41:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '4';
+2024-07-07 23:41:47 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '4';
+2024-07-07 23:41:47 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:41:47 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-07 23:42:00 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:42:03 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-07 23:42:04 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-07 23:42:04 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:33:35 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 09:33:35 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 09:33:35 info: Database connected successfully.
+2024-07-08 09:33:35 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Staffs' AND TABLE_SCHEMA = 'abcd'
+2024-07-08 09:33:35 info: Executing (default): SHOW INDEX FROM `Staffs`
+2024-07-08 09:33:35 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Students' AND TABLE_SCHEMA = 'abcd'
+2024-07-08 09:33:35 info: Executing (default): SHOW INDEX FROM `Students`
+2024-07-08 09:34:22 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:34:23 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:34:23 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:34:42 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:34:42 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:34:42 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:34:59 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:34:59 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:34:59 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:09 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:35:09 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:09 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:17 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:35:17 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:17 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:28 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:35:28 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:28 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:41 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:35:41 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:41 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:55 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:35:55 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:35:55 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:36:05 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:36:05 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:36:05 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:36:20 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 09:36:20 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:36:20 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:36:44 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:02 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '7';
+2024-07-08 09:37:02 info: Executing (default): DELETE FROM `Students` WHERE `id` = 7
+2024-07-08 09:37:08 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '9';
+2024-07-08 09:37:08 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '9';
+2024-07-08 09:37:16 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '9';
+2024-07-08 09:37:16 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:16 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:20 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '5';
+2024-07-08 09:37:20 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '5';
+2024-07-08 09:37:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:41 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '10';
+2024-07-08 09:37:41 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '10';
+2024-07-08 09:37:43 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:43 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:46 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '11';
+2024-07-08 09:37:46 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '11';
+2024-07-08 09:37:49 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:37:49 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:38:14 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '8';
+2024-07-08 09:38:14 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '8';
+2024-07-08 09:38:16 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:38:16 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:41:10 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:41:10 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:41:10 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:47:08 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:47:18 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:48:04 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:50:22 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:57:12 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 09:57:13 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 09:57:13 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:05:39 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 10:07:28 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 10:07:29 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:07:29 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:07:39 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 10:07:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:07:39 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:11:11 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 10:11:11 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:11:11 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:13:51 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:04 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-08 10:14:04 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-08 10:14:07 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:07 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:09 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-08 10:14:09 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '3';
+2024-07-08 10:14:12 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:12 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:31 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 10:14:31 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:31 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:14:52 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`id` = '10';
+2024-07-08 10:14:52 info: Executing (default): DELETE FROM `Students` WHERE `id` = 10
+2024-07-08 10:15:18 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'sivathri30@gmail.com' LIMIT 1;
+2024-07-08 10:15:18 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 10:15:18 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 10:15:27 info: Executing (default): INSERT INTO `Students` (`id`,`enrollment_number`,`student_first_name`,`student_last_Name`,`phone_number`,`email`,`createdAt`,`updatedAt`,`StaffId`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2024-07-08 10:15:27 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 10:15:27 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 10:17:30 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 10:17:30 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:17:30 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:19:36 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:19:36 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:21:56 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 1;
+2024-07-08 10:22:20 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'gayathri@gmail.com' LIMIT 1;
+2024-07-08 10:22:32 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `Staffs` AS `Staff` WHERE `Staff`.`email` = 'sivathri30@gmail.com' LIMIT 1;
+2024-07-08 10:22:32 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 10:22:32 info: Executing (default): SELECT `id`, `enrollment_number`, `student_first_name`, `student_last_Name`, `phone_number`, `email`, `createdAt`, `updatedAt`, `StaffId` FROM `Students` AS `Student` WHERE `Student`.`staffId` = 2;
+2024-07-08 14:44:01 error: Database connection failed: Unknown database 'todo'
+2024-07-08 14:45:26 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 14:45:26 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 14:45:26 info: Database connected successfully.
+2024-07-08 14:45:26 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 14:45:26 info: Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER NOT NULL auto_increment , `username` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2024-07-08 14:45:26 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 14:45:26 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 14:45:26 info: Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `description` TEXT, `due_date` DATETIME, `status` ENUM('pending', 'completed') DEFAULT 'pending', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `userId` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2024-07-08 14:45:26 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:02:26 info: Executing (default): SELECT `id`, `username`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 15:05:08 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:05:08 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:05:08 info: Database connected successfully.
+2024-07-08 15:05:08 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:05:08 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:05:08 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:05:08 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:05:12 info: Executing (default): SELECT `id`, `username`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com' LIMIT 1;
+2024-07-08 15:06:49 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:06:49 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:06:49 info: Database connected successfully.
+2024-07-08 15:06:49 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:06:49 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:06:49 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:06:49 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:07:25 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:07:25 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:07:25 info: Database connected successfully.
+2024-07-08 15:07:25 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:07:25 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:07:25 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:07:25 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:08:11 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:08:11 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:08:11 info: Database connected successfully.
+2024-07-08 15:08:11 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:08:11 info: Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER NOT NULL auto_increment , `email` VARCHAR(255) NOT NULL UNIQUE, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2024-07-08 15:08:11 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:08:11 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:08:11 info: Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `description` TEXT, `due_date` DATETIME, `status` ENUM('pending', 'completed') DEFAULT 'pending', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `userId` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2024-07-08 15:08:11 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:08:24 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-08 15:08:29 info: Executing (default): INSERT INTO `users` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-08 15:08:49 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:09:58 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:09:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:09:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:11:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:11:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:12:30 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:13:45 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:13:45 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:13:45 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:14:16 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:14:16 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:14:20 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:14:20 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:15:07 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:15:18 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:15:18 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:15:18 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:16:24 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:16:37 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:16:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:16:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:18:24 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:18:24 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:21:37 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:21:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:21:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:25:52 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:25:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:25:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:28:58 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:28:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:28:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:32:06 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:32:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:32:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:32:57 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 15:32:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:32:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:47:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:47:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:49:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:49:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:49:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:49:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:53:22 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:53:22 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:53:22 info: Database connected successfully.
+2024-07-08 15:53:22 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:53:22 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:53:22 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:53:22 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:53:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:53:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:53:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:53:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:53:33 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:53:33 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:53:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:54:38 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:54:38 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 15:54:38 info: Database connected successfully.
+2024-07-08 15:54:38 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:54:38 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 15:54:38 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 15:54:38 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 15:54:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:54:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:54:47 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '3';
+2024-07-08 15:54:47 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 3
+2024-07-08 15:54:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:54:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:54:53 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-08 15:54:53 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-08 15:54:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-08 15:54:55 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 4
+2024-07-08 15:55:31 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:55:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:55:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:55:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '6';
+2024-07-08 15:55:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '6';
+2024-07-08 15:55:38 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '6';
+2024-07-08 15:55:38 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 6
+2024-07-08 15:56:34 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 15:56:34 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:34 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:39 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:39 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:56:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:56:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 15:56:43 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 2
+2024-07-08 15:56:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-08 15:56:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-08 15:56:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-08 15:56:48 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 7
+2024-07-08 15:56:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:56:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:57:27 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:57:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 15:57:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 15:57:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:57:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:59:16 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:59:16 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 15:59:33 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:02:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:07:13 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:07:18 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:07:20 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:07:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:07:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:07:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:07:27 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '[object Object]';
+2024-07-08 16:08:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:08:13 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:08:13 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 1
+2024-07-08 16:08:54 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:08:54 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:09:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:09:42 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '5';
+2024-07-08 16:09:42 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 5
+2024-07-08 16:10:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:10:29 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 16:10:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:10:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:10:33 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '8';
+2024-07-08 16:10:39 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '8';
+2024-07-08 16:10:39 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 8
+2024-07-08 16:11:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:11:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:13:17 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 16:13:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:13:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:13:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:13:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:13:30 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:16:12 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:16:12 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:16:12 info: Database connected successfully.
+2024-07-08 16:16:12 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:16:12 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:16:12 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:16:12 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:16:15 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:18:07 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:18:07 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:18:07 info: Database connected successfully.
+2024-07-08 16:18:07 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:18:07 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:18:07 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:18:07 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:18:47 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:18:47 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:22:18 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:22:18 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:22:18 info: Database connected successfully.
+2024-07-08 16:22:18 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:22:18 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:22:18 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:22:18 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:22:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:22:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:22:30 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:22:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:23:55 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:23:55 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:23:55 info: Database connected successfully.
+2024-07-08 16:23:55 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:23:55 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:23:55 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:23:55 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:23:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:24:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:24:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:29:39 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:29:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:29:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:30:38 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:31:38 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '9';
+2024-07-08 16:31:47 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:31:47 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:32:02 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 16:32:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:32:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:34:04 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:34:04 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:34:04 info: Database connected successfully.
+2024-07-08 16:34:04 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:34:04 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:34:04 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:34:04 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:34:18 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?);
+2024-07-08 16:34:18 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:34:18 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:39:05 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:39:05 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:39:05 info: Database connected successfully.
+2024-07-08 16:39:05 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:39:05 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:39:05 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:39:05 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:39:20 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-08 16:39:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:39:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:44:47 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:44:47 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:44:47 info: Database connected successfully.
+2024-07-08 16:44:47 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:44:47 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:44:47 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:44:47 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:45:12 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 16:45:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:45:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:47:01 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-08 16:47:33 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:47:33 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:47:33 info: Database connected successfully.
+2024-07-08 16:47:33 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:47:33 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:47:33 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:47:33 info: Executing (default): CREATE TABLE IF NOT EXISTS `tasks` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `description` TEXT, `due_date` DATETIME, `status` ENUM('pending', 'completed') DEFAULT 'pending', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `userId` INTEGER NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+2024-07-08 16:47:33 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:47:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:47:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:47:51 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-08 16:47:51 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:47:51 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:48:32 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:48:32 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 16:48:32 info: Database connected successfully.
+2024-07-08 16:48:32 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:48:32 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 16:48:32 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 16:48:32 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 16:48:50 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-08 16:48:50 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:48:50 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:51:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:52:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:52:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:52:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:53:42 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:54:14 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:55:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:55:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:55:08 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:55:08 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:55:51 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:56:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:58:00 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:58:26 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 16:58:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:58:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:58:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 16:58:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 16:58:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 16:58:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 16:59:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 16:59:26 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-08 16:59:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:59:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 16:59:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 16:59:29 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:01:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:02:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:02:34 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:34 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:38 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:02:38 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:02:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:51 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:52 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:02:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:04:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:04:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:04:35 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:04:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:04:48 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:04:48 info: Database connected successfully.
+2024-07-08 17:04:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:04:48 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 17:04:48 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:04:48 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 17:05:27 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:06:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:06:19 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:06:19 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:06:19 info: Database connected successfully.
+2024-07-08 17:06:19 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:06:19 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 17:06:19 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:06:19 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 17:07:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:07:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:07:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:07:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:07:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:07:56 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:08:16 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:08:16 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:08:16 info: Database connected successfully.
+2024-07-08 17:08:16 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:08:16 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 17:08:16 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:08:16 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 17:10:09 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:10:09 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:10:09 info: Database connected successfully.
+2024-07-08 17:10:09 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:10:09 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 17:10:09 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:10:09 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 17:10:11 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:11:42 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:11:42 info: Executing (default): SELECT 1+1 AS result
+2024-07-08 17:11:42 info: Database connected successfully.
+2024-07-08 17:11:42 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:11:42 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-08 17:11:42 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-08 17:11:42 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-08 17:11:44 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '1';
+2024-07-08 17:11:44 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:11:44 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:11:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 17:11:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 17:11:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-08 17:11:55 info: Executing (default): UPDATE `tasks` SET `due_date`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-08 17:11:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-08 17:11:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
