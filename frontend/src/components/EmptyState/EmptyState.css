@@ -1,0 +1,37 @@
+.empty-state-container .empty-state-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state-container img.empty-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.empty-state-container h3 .empty-state-container2 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.empty-state-container .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.empty-state-container .btn-primary:hover {
+    background-color: #ff6f61;
+}

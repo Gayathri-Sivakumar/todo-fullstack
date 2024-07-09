@@ -6,7 +6,9 @@
 }
 
 .task-form h2 {
-    color: #333;
+    color: #ec5454;
+    font-size: 28px;
+    text-align: center;
 }
 
 .task-form .button-group {
@@ -28,17 +30,17 @@
 }
 
 .task-form .form-check-label {
-    color: #555;
+    color: #727272;
 }
 
 .task-form .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #ff6f61;
+    border-color: #ff6f61;
 }
 
 .task-form .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #f65546;
+    border-color: #f55547;
 }
 
 .task-form .btn-secondary {

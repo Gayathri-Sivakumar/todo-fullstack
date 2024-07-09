@@ -1,0 +1,23 @@
+.search-bar-container {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-input {
+    border: 1px solid #ff6f61;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar-input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 7px rgba(255, 160, 151, 0.5);
+    outline: none;
+}

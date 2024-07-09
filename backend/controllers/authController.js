@@ -33,7 +33,8 @@ const signup = async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = await User.create({ email, password: hashedPassword });
-    res.status(201).json({ message: "User registered successfully", user });
+    const userid = user.id;
+    res.status(201).json({ message: "User registered successfully", userid });
   } catch (error) {
     console.error("Error during signup:", error);
     res.status(500).json({ error: "Internal Server Error" });

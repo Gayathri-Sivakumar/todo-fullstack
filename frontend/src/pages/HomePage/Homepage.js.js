@@ -4,12 +4,16 @@ import { Table, Button, Modal } from "react-bootstrap";
 import axios from "../../utils/axios";
 import { Alert } from "@mui/material";
 import TaskDetailModal from "../TaskDetails/TaskDetailModal";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import EmptyState from "../../components/EmptyState/EmptyState";
 import "./Homepage.css";
 import AuthContext from "../../context/AuthContext";
 
 const Homepage = () => {
   const { logout } = useContext(AuthContext);
   const [tasks, setTasks] = useState([]);
+  const [filteredTasks, setFilteredTasks] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [taskToDelete, settaskToDelete] = useState(null);
   const [message, setMessage] = useState(null);
@@ -25,12 +29,22 @@ const Homepage = () => {
       try {
         const response = await axios.get("/tasks");
         setTasks(response.data);
+        setFilteredTasks(response.data);
       } catch (err) {
         setError("Failed to fetch tasks.");
       }
     };
     fetchTasks();
   }, []);
+
+  useEffect(() => {
+    const filtered = tasks.filter(
+      (task) =>
+        task.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        task.status.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredTasks(filtered);
+  }, [searchQuery, tasks]);
 
   const handleDelete = async () => {
     try {
@@ -61,7 +75,6 @@ const Homepage = () => {
   const handleCloseTaskDetailModal = (shouldRefresh) => {
     setTaskDetailModal({ show: false, taskId: null });
     if (shouldRefresh) {
-      // Refresh tasks after delete
       const fetchTasks = async () => {
         try {
           const response = await axios.get("/tasks");
@@ -87,50 +100,63 @@ const Homepage = () => {
           </Button>
         </div>
       </div>
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {message && <Alert severity="success">{message}</Alert>}
       {error && <Alert severity="error">{error}</Alert>}
-      <Table striped bordered hover className="task-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Due Date</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tasks.map((task) => (
-            <tr key={task.id}>
-              <td>{task.title}</td>
-              <td>{new Date(task.due_date).toISOString().split("T")[0]}</td>
-              <td>{task.status}</td>
-              <td>
-                <Button
-                  variant="info"
-                  size="sm"
-                  onClick={() => handleViewTask(task.id)}
-                  className="me-2"
-                >
-                  View
-                </Button>
-                <Link
-                  to={`/edit/${task.id}`}
-                  className="btn btn-primary btn-sm me-2"
-                >
-                  Edit
-                </Link>
-                <Button
-                  variant="danger"
-                  size="sm"
-                  onClick={() => confirmDelete(task.id)}
-                >
-                  Delete
-                </Button>
-              </td>
+      {filteredTasks.length === 0 ? (
+        <EmptyState
+          message={
+            tasks.length === 0
+              ? "No tasks added yet. Create a new task!"
+              : "No tasks found."
+          }
+          showAddButton={tasks.length === 0}
+        />
+      ) : (
+        <Table striped bordered hover className="task-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {filteredTasks.map((task) => (
+              <tr key={task.id}>
+                <td>{task.title}</td>
+                <td>{new Date(task.due_date).toISOString().split("T")[0]}</td>
+                <td>{task.status}</td>
+                <td>
+                  <Button
+                    variant="info"
+                    size="sm"
+                    onClick={() => handleViewTask(task.id)}
+                    className="me-2 ms-1"
+                  >
+                    View
+                  </Button>
+                  <Link
+                    to={`/edit/${task.id}`}
+                    className="btn btn-primary btn-sm me-2"
+                  >
+                    Edit
+                  </Link>
+                  <Button
+                    variant="danger"
+                    size="sm"
+                    className="btn btn-primary btn-sm me-2"
+                    onClick={() => confirmDelete(task.id)}
+                  >
+                    Delete
+                  </Button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      )}
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete</Modal.Title>

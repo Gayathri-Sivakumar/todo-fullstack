@@ -24,7 +24,7 @@
 
 .header-buttons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .header .btn-primary {
@@ -68,12 +68,14 @@
     background-color: #ff6f61;
     color: white;
     padding: 15px;
+    text-align: center;
 }
 
 .task-table td {
     padding: 15px;
     text-align: left;
     color: #333;
+    text-align: center;
 }
 
 .task-table tr:nth-child(even) {

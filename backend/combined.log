@@ -745,3 +745,172 @@
 2024-07-09 00:43:24 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
 2024-07-09 00:43:24 info: Executing (default): SHOW INDEX FROM `tasks`
 2024-07-09 00:43:29 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 00:45:54 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 00:45:54 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 00:45:54 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-09 00:45:54 info: Database connected successfully.
+2024-07-09 00:45:54 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-09 00:45:54 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-09 00:45:54 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-09 00:45:57 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 00:45:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:45:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:46:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '3';
+2024-07-09 00:46:01 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 3
+2024-07-09 00:46:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:46:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:46:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:46:37 info: Executing (default): UPDATE `tasks` SET `due_date`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-09 00:46:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:46:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:46:51 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-09 00:46:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-09 00:46:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-09 00:46:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:46:58 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:47:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:47:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:47:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:47:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:47:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 00:47:12 info: Executing (default): UPDATE `tasks` SET `status`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-09 00:47:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:47:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:59:06 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-09 00:59:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:59:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 00:59:27 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 01:00:20 info: Executing (default): INSERT INTO `users` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-09 01:00:26 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 01:00:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 01:00:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 01:02:46 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 01:02:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 01:02:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 01:04:20 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '6';
+2024-07-09 01:04:37 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-09 01:04:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 01:04:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:41:37 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 09:41:37 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 09:41:37 info: Database connected successfully.
+2024-07-09 09:41:37 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-09 09:41:37 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-09 09:41:37 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-09 09:41:37 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-09 09:43:13 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'sivathri30@gmail.com';
+2024-07-09 09:43:13 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:43:13 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:43:53 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:51:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:52:05 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:52:25 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:52:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '2';
+2024-07-09 09:52:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 09:52:43 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '4';
+2024-07-09 09:52:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:52:46 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 1;
+2024-07-09 09:53:01 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 09:53:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 09:53:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 09:53:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '6';
+2024-07-09 09:53:04 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 6
+2024-07-09 09:56:54 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 09:56:54 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:00:32 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 10:00:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:00:32 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:00:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:00:41 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:01:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:08:10 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 10:08:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:08:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:14:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:20:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:20:12 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:33:17 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 10:33:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:33:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:45:45 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:46:00 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:46:21 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:46:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:46:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:53:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:53:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:54:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:54:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:56:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:56:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 10:56:08 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 10:57:15 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 10:57:40 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 10:58:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 10:58:44 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:00:37 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:01:05 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:01:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:02:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:03:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:03:31 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:04:03 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:04:17 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:05:36 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:05:59 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:08 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:08 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:06:10 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:06:14 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:19 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:22 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:06:26 info: Executing (default): UPDATE `tasks` SET `status`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-09 11:06:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:06:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:18:33 info: Executing (default): INSERT INTO `users` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-09 11:18:52 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 11:18:52 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 11:18:52 info: Database connected successfully.
+2024-07-09 11:18:52 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-09 11:18:52 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-09 11:18:52 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-09 11:18:52 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-09 11:19:08 info: Executing (default): INSERT INTO `users` (`id`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2024-07-09 11:54:45 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 11:54:45 info: Executing (default): SELECT 1+1 AS result
+2024-07-09 11:54:45 info: Database connected successfully.
+2024-07-09 11:54:45 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'todo'
+2024-07-09 11:54:45 info: Executing (default): SHOW INDEX FROM `users`
+2024-07-09 11:54:45 info: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tasks' AND TABLE_SCHEMA = 'todo'
+2024-07-09 11:54:45 info: Executing (default): SHOW INDEX FROM `tasks`
+2024-07-09 11:54:48 info: Executing (default): SELECT `id`, `email`, `password`, `createdAt`, `updatedAt` FROM `users` AS `user` WHERE `user`.`email` = 'abigayasiva@gmail.com';
+2024-07-09 11:54:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:54:48 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:54:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:54:55 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:01 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:01 info: Executing (default): UPDATE `tasks` SET `due_date`=?,`status`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-09 11:55:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:02 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:04 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:06 info: Executing (default): UPDATE `tasks` SET `status`=?,`updatedAt`=? WHERE `id` = ?
+2024-07-09 11:55:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:06 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:09 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:11 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:11 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:26 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 11:55:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:26 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:49 info: Executing (default): INSERT INTO `tasks` (`id`,`title`,`description`,`due_date`,`status`,`createdAt`,`updatedAt`,`userId`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2024-07-09 11:55:49 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:49 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`userId` = 2;
+2024-07-09 11:55:57 info: Executing (default): SELECT `id`, `title`, `description`, `due_date`, `status`, `createdAt`, `updatedAt`, `userId` FROM `tasks` AS `task` WHERE `task`.`id` = '7';
+2024-07-09 11:55:57 info: Executing (default): DELETE FROM `tasks` WHERE `id` = 7

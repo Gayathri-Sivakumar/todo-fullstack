@@ -44,17 +44,17 @@ const TaskDetailModal = ({ taskId, show, handleClose }) => {
           <p>Loading...</p>
         ) : (
           <>
-            <p>
+            <p className="modal-text">
               <strong>Title:</strong> {task.title}
             </p>
-            <p>
+            <p className="modal-text">
               <strong>Description:</strong> {task.description}
             </p>
-            <p>
+            <p className="modal-text">
               <strong>Due Date:</strong>{" "}
               {new Date(task.due_date).toISOString().split("T")[0]}
             </p>
-            <p>
+            <p className="modal-text">
               <strong>Status:</strong>{" "}
               {task.completed ? "Completed" : "Incomplete"}
             </p>
